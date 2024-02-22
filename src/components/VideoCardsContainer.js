@@ -9,7 +9,7 @@ const VideoCardsContainer = () => {
   return isPopularVideos && (
     <div className='flex flex-wrap w-full'>
         {
-            isPopularVideos.map((video)=><VideoCard key={video.id} videoData={video} />)
+            isPopularVideos.map((video,index)=><VideoCard key={video?.id+index} videoData={video} />)
         }
         
     </div>

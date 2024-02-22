@@ -10,7 +10,8 @@ const usePopularVideos = ()=>{
     const getYoutubeVideoList = async ()=>{
         const data = await fetch(YOUTUBE_VIDEO_LIST);
         const json = await data.json();
-        dispatch(addPopularVideos(json.items))
+       // console.log(json.items);
+       dispatch(addPopularVideos(json.items))
     }
     useEffect(()=>{
       !isPopularVideos && getYoutubeVideoList();

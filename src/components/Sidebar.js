@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const Sidebar = ()=>{
     const isMenuOpen = useSelector((store)=>store.app.isMenuOpen)
     return isMenuOpen && (
-        <div className=" col-span-1 py-2 px-2 shadow-lg min-h-[91vh] overflow-y-scroll">
+        <div className=" col-span-12 text-center md:col-span-1 py-2 px-2 shadow-lg min-h-[91vh] overflow-y-scroll">
 
             <div className="px-2 py-2 border-b border-black">
             <ul >
