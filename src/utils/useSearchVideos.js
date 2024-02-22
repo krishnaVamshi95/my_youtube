@@ -13,7 +13,7 @@ const useSearchVideos = (ele,isOnSearch)=>{
         const fetchData = await fetch(YOUTUBE_SEARCH_BY_KEYWORD_API.replace("[QUERY]", ele));
         const results = await fetchData.json();
         
-        if(isOnSearch){
+        if(!isOnSearch){
             console.log(results,"abccc");
             dispath(addPopularVideos(results.items))
         }

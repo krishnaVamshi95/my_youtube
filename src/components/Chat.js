@@ -18,7 +18,7 @@ const Chat = () => {
   return data && (
     <div className="flex-col-reverse">
     {
-        data.map((chat)=><div className={ "flex items-center flex-wrap w-full my-3"}>
+        data.map((chat,index)=><div key={index} className={ "flex items-center flex-wrap w-full my-3"}>
         <div>
           <span>
             <i className="fa fa-user-circle text-2xl" aria-hidden="true"></i>

@@ -13,10 +13,10 @@ const VideoCard = ({ videoData }) => {
           <img
             alt={channelTitle}
             src={thumbnails.standard ? thumbnails.standard.url : thumbnails.default.url}
-            className="w-72 rounded-lg"
+            className="w-full md:w-72 rounded-lg"
           />
         </div>
-        <p className="my-2 h-12 overflow-hidden text-ellipsis w-72">{title}</p>
+        <p className="my-2 h-12 overflow-hidden text-ellipsis w-full md:w-72">{title}</p>
         <p>{channelTitle}</p>
         <span>
           <b>views: </b>

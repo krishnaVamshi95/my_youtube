@@ -5,7 +5,7 @@ const Body = ()=>{
     return(
         <div className="grid grid-cols-12 min-h-[91vh]">
             <Sidebar/>
-            <div className="col-span-11 p-5">
+            <div className="col-span-12 md:col-span-11 p-5">
             <Outlet/>
             </div>
         </div>
